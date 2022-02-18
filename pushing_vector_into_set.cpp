@@ -22,8 +22,9 @@ void printDataSet(std::set  <int>& sObj ) {
     std::cout << std::endl;
 }
 
-inline void clearSTL (std::vector <int>& vReceived) {
+inline void clearSTL (std::vector <int>& vReceived, std::set  <int>& sObj) {
         vReceived.clear();
+        sObj.clear();
 }
 
 
@@ -43,7 +44,7 @@ int main()
     std::cout << std::endl;
 
     printDataSet(sObj);
-    clearSTL(vObj);
+    clearSTL(vObj, sObj);
 
     return (0);
 }
